@@ -1,4 +1,4 @@
-//import {ColorearHtml} from './Paint.js';
+import {ColorearHtml} from './Paint.js';
 
-//new ColorearHtml();
+new ColorearHtml();
 
