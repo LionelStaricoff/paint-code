@@ -1,5 +1,5 @@
 
-export class ColorearHtml {
+export default class ColorearHtml {
     constructor() {
         this.etiquetas = 'yellowgreen';
         this.atributos = 'palevioletred';
