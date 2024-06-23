@@ -66,6 +66,8 @@ export  class ColorearHtml {
             .replace(/<\/ul>/g, `&lt;<L style="color: ${this.etiquetas};">/ul</L>&gt;`)
             .replace(/<li/g, `<br> &lt;<L style="color: ${this.etiquetas};">li</L>`)
             .replace(/<\/li>/g, `&lt;<L style="color: ${this.etiquetas};">/li</L>&gt;`)
+            .replace(/<nav/g, `<br> &lt;<L style="color: ${this.etiquetas};">nav</L>`)
+            .replace(/<\/nav>/g, `&lt;<L style="color: ${this.etiquetas};">/nav</L>&gt;`)
 
             ;
 
