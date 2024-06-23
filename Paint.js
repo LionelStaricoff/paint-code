@@ -68,7 +68,14 @@ export  class ColorearHtml {
             .replace(/<\/li>/g, `&lt;<L style="color: ${this.etiquetas};">/li</L>&gt;`)
             .replace(/<nav/g, `<br> &lt;<L style="color: ${this.etiquetas};">nav</L>`)
             .replace(/<\/nav>/g, `&lt;<L style="color: ${this.etiquetas};">/nav</L>&gt;`)
-
+            .replace(/<hr/g, `<br> &lt;<L style="color: ${this.etiquetas};">hr</L>`)
+            .replace(/<pre/g, `<br> &lt;<L style="color: ${this.etiquetas};">pre</L>`)
+            .replace(/<\/pre>/g, `&lt;<L style="color: ${this.etiquetas};">/pre</L>&gt;`)
+            .replace(/<blockquote/g, `<br> &lt;<L style="color: ${this.etiquetas};">blockquote</L>`)
+            .replace(/<\/blockquote>/g, `&lt;<L style="color: ${this.etiquetas};">/blockquote</L>&gt;`)
+            .replace(/<ol/g, `<br> &lt;<L style="color: ${this.etiquetas};">ol</L>`)
+            .replace(/<\/ol>/g, `&lt;<L style="color: ${this.etiquetas};">/ol</L>&gt;`)
+           
             ;
 
         codigoHtml.innerHTML = contenidoModificado;
