@@ -1,9 +1,10 @@
 
 export class ColorearHtml {
-    constructor() {
-        this.etiquetas = 'yellowgreen';
-        this.atributos = 'palevioletred';
-        this.nombres = 'cyan';
+    constructor(etiquetas, atributos, background, letras) {
+        this._etiquetas = (etiquetas) ? etiquetas : 'yellowgreen';
+        this._atributos = (atributos) ? atributos : 'palevioletred';
+        this._background = (background) ? background : "#333333";
+        this._letras = (letras) ? letras : 'gainsboro';
 
         this.reemplazar();
         this.espaciar();
@@ -19,30 +20,35 @@ export class ColorearHtml {
 
 
     colorar(codigoHtml) {
-        codigoHtml.style.backgroundColor = "#333333";
+        codigoHtml.style.backgroundColor = this._background;
         codigoHtml.style.padding = '1em';
-        codigoHtml.style.color = 'gainsboro';
+        codigoHtml.style.color = this._letras;
         const contenido = codigoHtml.innerHTML;
         const etiquetas = ["header", "main", "footer", "section", "h1", "H1", "h2", "H2", "h3", "H3", "h4", "H4", "h5", "H5", "h6", "H6",
             "button", "ul", "li", "nav", "pre", "hr", "ol", "blockquote"
-            ,'span','canvas','iframe','class','id','src','frameborder','srcset','alt'];
+            , 'span', 'canvas', 'iframe', 'class', 'id', 'src', 'frameborder', 'srcset', 'alt',
+            'tr', 'td', 'thead',
+            'video', 'a', 'form', 'action', 'method'];
 
-            const atributos = ['srcset','alt','class','id','src','frameborder'];
+
+
+        const atributos = ['srcset', 'alt', 'class', 'id', 'src', 'frameborder',
+            'action', 'method'];
 
         let contenidoModificado = contenido
         etiquetas.forEach(etiqueta => {
 
-            if( atributos.includes(etiqueta)){
+            if (atributos.includes(etiqueta)) {
                 contenidoModificado = contenidoModificado
-                .replace(new RegExp(`${etiqueta}\\b`, 'g'), `<L style="color: ${this.atributos};">${etiqueta}</L>`)
-              
+                    .replace(new RegExp(`${etiqueta}\\b`, 'g'), `<L style="color: ${this._atributos};">${etiqueta}</L>`)
 
-             }else {
+
+            } else {
                 contenidoModificado = contenidoModificado
-                .replace(new RegExp(`<${etiqueta}\\b`, 'g'), `<br> &lt;<L style="color: ${this.etiquetas};">${etiqueta}</L>`)
-                .replace(new RegExp(`</${etiqueta}>`, 'g'), `&lt;<L style="color: ${this.etiquetas};">/${etiqueta}</L>&gt;`);
+                    .replace(new RegExp(`<${etiqueta}\\b`, 'g'), `<br> &lt;<L style="color: ${this._etiquetas};">${etiqueta}</L>`)
+                    .replace(new RegExp(`</${etiqueta}>`, 'g'), `&lt;<L style="color: ${this._etiquetas};">/${etiqueta}</L>&gt;`);
             }
-       
+
         });
 
         codigoHtml.innerHTML = contenidoModificado;
@@ -72,7 +78,7 @@ export class ColorearHtml {
             }
         }
     }
-    colocarPaddingInterno(hijos, padding = 20,) {
+    colocarPaddingInterno(hijos, padding = 20, ) {
 
         const span = document.createElement('span')
         span.style.display = 'block'
