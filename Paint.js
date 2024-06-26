@@ -23,13 +23,16 @@ export class ColorearHtml {
         codigoHtml.style.padding = '1em';
         codigoHtml.style.color = 'gainsboro';
         const contenido = codigoHtml.innerHTML;
-        const etiquetas = ['class','id',"header", "main", "footer", "section", "h1", "H1", "h2", "H2", "h3", "H3", "h4", "H4", "h5", "H5", "h6", "H6",
-            "button", "ul", "li", "nav", "pre", "hr", "ol", "blockquote"];
+        const etiquetas = ["header", "main", "footer", "section", "h1", "H1", "h2", "H2", "h3", "H3", "h4", "H4", "h5", "H5", "h6", "H6",
+            "button", "ul", "li", "nav", "pre", "hr", "ol", "blockquote"
+            ,'span','canvas','iframe','class','id','src','frameborder'];
+
+            const atributos = ['class','id','src','frameborder'];
 
         let contenidoModificado = contenido
         etiquetas.forEach(etiqueta => {
 
-            if( 'id' == etiqueta || 'class'== etiqueta){
+            if( atributos.includes(etiqueta)){
                 contenidoModificado = contenidoModificado
                 .replace(new RegExp(`${etiqueta}\\b`, 'g'), `<L style="color: ${this.atributos};">${etiqueta}</L>`)
               

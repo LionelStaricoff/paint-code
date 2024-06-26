@@ -2,7 +2,7 @@
 
 # paint-code
 
-### version 1.0.2
+### version 1.1.3
 
 <h4>Colorea tu código para que se vea <b>elegante</b></h4>
 
