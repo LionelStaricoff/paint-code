@@ -1,4 +1,4 @@
 import {ColorearHtml} from './Paint.js';
 
-new ColorearHtml(null,null,null,null);
+new ColorearHtml('red','blue','black','yellow');
 
