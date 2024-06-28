@@ -121,27 +121,43 @@ export class ColorearHtml {
         return this;
     }
 
-    static etiquetas(color){
-        this.Builder._etiquetas = color;
+    static etiquetas(color) {
+        this.Builder._etiquetas = color ?? 'yellowgreen';
         return this;
     }
-    static atributos(color){
-        this.Builder._atributos = color;
-        return this;
-    }
-
-    static background(color){
-        this.Builder._background = color;
+    static atributos(color) {
+        this.Builder._atributos = color ?? 'palevioletred';
         return this;
     }
 
-    
-    static letras(color){
-        this.Builder._letras = color;
+    static background(color) {
+        this.Builder._background = color ?? "#333333";
         return this;
     }
-    static build(){
-       return this.Builder;
-     
+
+
+    static letras(color) {
+        this.Builder._letras = color ?? 'gainsboro';
+        return this;
+    }
+    static build() {
+        return this.Builder;
+
+    }
+
+    static colores = {
+        azul: (alfa = 1) => {return `rgb(0, 0, 255,${alfa})`},
+        negro: (alfa = 1) => {return `rgb(0, 0, 0,${alfa})`},
+        rojo: (alfa = 1) => {return `rgb(255, 0, 0,${alfa})`},
+        amarillo: (alfa = 1) => {return `rgb(255, 255, 0,${alfa})`},
+        blanco: (alfa = 1) => {return `rgb(255, 255, 255,${alfa})`},
+        verde: (alfa = 1) => {return `rgb(0, 128, 0,${alfa})`},
+        marron: (alfa = 1) => {return `rgb( 165, 42, 42,${alfa})`},
+        violeta: (alfa = 1) => {return `rgb(138, 43, 226,${alfa})`},
+        beige: (alfa = 1) => {return `rgb(245, 245, 220,${alfa})`},
+        naranja: (alfa = 1) => {return `rgb(255, 165, 0,${alfa})`},
+        rosa: (alfa = 1) => {return `rgb(255, 192, 203,${alfa})`}
+
+       
     }
 }
