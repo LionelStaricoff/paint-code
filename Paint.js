@@ -5,6 +5,7 @@ export class ColorearHtml {
         this._atributos = (atributos) ? atributos : 'palevioletred';
         this._background = (background) ? background : "#333333";
         this._letras = (letras) ? letras : 'gainsboro';
+        this.builder;
 
         this.reemplazar();
         this.espaciar();
@@ -78,7 +79,7 @@ export class ColorearHtml {
             }
         }
     }
-    colocarPaddingInterno(hijos, padding = 20, ) {
+    colocarPaddingInterno(hijos, padding = 20,) {
 
         const span = document.createElement('span')
         span.style.display = 'block'
@@ -115,4 +116,32 @@ export class ColorearHtml {
         padre.appendChild(div);
     }
 
+    static Builder() {
+        this.Builder = new ColorearHtml();
+        return this;
+    }
+
+    static etiquetas(color){
+        this.Builder._etiquetas = color;
+        return this;
+    }
+    static atributos(color){
+        this.Builder._atributos = color;
+        return this;
+    }
+
+    static background(color){
+        this.Builder._background = color;
+        return this;
+    }
+
+    
+    static letras(color){
+        this.Builder._letras = color;
+        return this;
+    }
+    static build(){
+       return this.Builder;
+     
+    }
 }
