@@ -62,6 +62,25 @@ Solo debes colocar el script en tu html y agregar la clase colorear al padre:
 </code>
 </pre>
 
+
+## Clase estatica colores:
+### puedes pasar por parametro el alfa como un string en porcentaje y con punto:
+
+<pre>
+<code>
+   &lt;script type="module" &gt;  
+       import{ColorearHtml} from 'https://lionelstaricoff.github.io/paint-code/Paint.js';
+
+     ColorearHtml.Builder()
+              .etiquetas(ColorearHtml.colores.naranja('90%'))
+              .background(ColorearHtml.colores.azul(.8))
+              .atributos(ColorearHtml.colores.negro())
+              .letras(ColorearHtml.colores.blanco())
+              .build()
+      &lt;script&gt;
+</code>
+</pre>
+
 &copy; Todos los derechos recervados por mi <a target=_blank href="https://www.linkedin.com/in/lionel-staricoff/"> Staricoff Lionel</a>
 
 
