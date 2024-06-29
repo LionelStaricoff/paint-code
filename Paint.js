@@ -26,15 +26,15 @@ export class ColorearHtml {
         codigoHtml.style.color = this._letras;
         const contenido = codigoHtml.innerHTML;
         const etiquetas = ["header", "main", "footer", "section", "h1", "H1", "h2", "H2", "h3", "H3", "h4", "H4", "h5", "H5", "h6", "H6",
-            "button", "ul", "li", "nav", "pre", "hr", "ol", "blockquote"
-            , 'span', 'canvas', 'iframe', 'class', 'id', 'src', 'frameborder', 'srcset', 'alt',
-            'tr', 'td', 'thead',
-            'video', 'a', 'form', 'action', 'method'];
+            "button", "ul", "li", "nav", "pre", "hr", "ol", "blockquote",
+             'span', 'canvas', 'iframe','br', 
+           'table', 'tr', 'td', 'thead',
+            'video', 'a', 'form','label','input',
+        'srcset', 'alt', 'class', 'id', 'src', 'frameborder', 'action', 'method','name','for','type','value'];
 
 
 
-        const atributos = ['srcset', 'alt', 'class', 'id', 'src', 'frameborder',
-            'action', 'method'];
+        const atributos = ['srcset', 'alt', 'class', 'id', 'src', 'frameborder','action', 'method','name','for','type','value'];
 
         let contenidoModificado = contenido
         etiquetas.forEach(etiqueta => {

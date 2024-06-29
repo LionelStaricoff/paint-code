@@ -4,8 +4,8 @@ import {ColorearHtml} from './Paint.js';
 
 ColorearHtml.Builder()
 .etiquetas(ColorearHtml.colores.naranja('90%'))
-.background(ColorearHtml.colores.azul(.8))
-.atributos(ColorearHtml.colores.negro())
-.letras(ColorearHtml.colores.blanco())
+.background(ColorearHtml.colores.negro(.7))
+.atributos(ColorearHtml.colores.verde())
+.letras(ColorearHtml.colores.amarillo(.8))
 .build()
 
