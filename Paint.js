@@ -26,15 +26,24 @@ export class ColorearHtml {
         codigoHtml.style.color = this._letras;
         const contenido = codigoHtml.innerHTML;
         const etiquetas = ["header", "main", "footer", "section", "h1", "H1", "h2", "H2", "h3", "H3", "h4", "H4", "h5", "H5", "h6", "H6",
-            "button", "ul", "li", "nav", "pre", "hr", "ol", "blockquote",
-             'span', 'canvas', 'iframe','br', 
-           'table', 'tr', 'td', 'thead',
-            'video', 'a', 'form','label','input',
-        'srcset', 'alt', 'class', 'id', 'src', 'frameborder', 'action', 'method','name','for','type','value'];
+            "button", "ul", "li", "nav", "pre", "hr", "ol", "blockquote",'strong','i','p',
+             'span', 'canvas', 'iframe','br','!DOCTYPE html', 'html','base','bdi','bdo',
+           'table', 'tr', 'td', 'thead','th','caption','head','title','body','dfn','abbr','address','script',
+            'video', 'a', 'form','label','input','map','area','audio','source',
+
+        'srcset', 'alt', 'class', 'id', 'src', 'frameborder', 'action', 'method','name','for','type','value','href','target',
+    'usemap','width',' height','shape','coords','controls','autoplay','loop','muted','preload','dir','cite','margin',
+    'margin-left','padding-right','margin-top','margin-bottom','max-width','min-height','max-height','min-width',
+    'autofocus','disabled','text-align','padding','padding-top','padding-bottom','margin-inline-start','margin-inline-end'
+    ];
 
 
 
-        const atributos = ['srcset', 'alt', 'class', 'id', 'src', 'frameborder','action', 'method','name','for','type','value'];
+        const atributos = ['srcset', 'alt', 'class', 'id', 'src', 'frameborder','action', 'method','name','for','type','value','href',
+            'target','usemap','width',' height','shape','coords','controls','autoplay','loop','muted','preload','dir','cite','margin',
+            'margin-left','margin-top','margin-bottom','autofocus','disabled','text-align','padding-right','padding','padding-top','padding-bottom',
+            'max-width','min-width','min-height','max-height','margin-inline-start','margin-inline-end'
+        ];
 
         let contenidoModificado = contenido
         etiquetas.forEach(etiqueta => {
