@@ -28,13 +28,16 @@ export class ColorearHtml {
         const etiquetas = ["header", "main", "footer", "section", "h1", "H1", "h2", "H2", "h3", "H3", "h4", "H4", "h5", "H5", "h6", "H6",
             "button", "ul", "li", "nav", "pre", "hr", "ol", "blockquote",'strong','i','p',
              'span', 'canvas', 'iframe','br','!DOCTYPE html', 'html','base','bdi','bdo',
-           'table', 'tr', 'td', 'thead','th','caption','head','title','body','dfn','abbr','address','script',
-            'video', 'a', 'form','label','input','map','area','audio','source',
+           'table', 'tr', 'td', 'thead','colgroup','col','th','caption','head','title','body','dfn','abbr','address','script',
+            'video', 'a', 'form','label','input','map','area','audio','source','cite','var','samp','kbd','data','datalist',
+            'option','dl','dt','dd','del','ins','details','summary','dfn','dialog','em','embed','legend','fieldset',
+            'figure','figcaption',
 
         'srcset', 'alt', 'class', 'id', 'src', 'frameborder', 'action', 'method','name','for','type','value','href','target',
     'usemap','width',' height','shape','coords','controls','autoplay','loop','muted','preload','dir','cite','margin',
     'margin-left','padding-right','margin-top','margin-bottom','max-width','min-height','max-height','min-width',
-    'autofocus','disabled','text-align','padding','padding-top','padding-bottom','margin-inline-start','margin-inline-end'
+    'autofocus','disabled','text-align','padding','padding-top','padding-bottom','margin-inline-start','margin-inline-end',
+    'font-style','font-weight','font-variant','font-size','rel','text-shadow','open'
     ];
 
 
@@ -42,7 +45,8 @@ export class ColorearHtml {
         const atributos = ['srcset', 'alt', 'class', 'id', 'src', 'frameborder','action', 'method','name','for','type','value','href',
             'target','usemap','width',' height','shape','coords','controls','autoplay','loop','muted','preload','dir','cite','margin',
             'margin-left','margin-top','margin-bottom','autofocus','disabled','text-align','padding-right','padding','padding-top','padding-bottom',
-            'max-width','min-width','min-height','max-height','margin-inline-start','margin-inline-end'
+            'max-width','min-width','min-height','max-height','margin-inline-start','margin-inline-end',
+            'font-style','font-weight','font-variant','font-size','rel','text-shadow','open'
         ];
 
         let contenidoModificado = contenido
