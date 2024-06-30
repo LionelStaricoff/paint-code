@@ -46,9 +46,10 @@ export class ColorearHtml {
 
 
         const atributos = ['srcset', 'alt', 'class', 'id', 'src', 'frameborder', 'action', 'method', 'name', 'for', 'type', 'value', 'href',
-            'target', 'usemap', 'width', ' height', 'shape', 'coords', 'controls', 'autoplay', 'loop', 'muted', 'preload', 'dir', 'cite', 'margin',
-            'margin-left', 'margin-top', 'margin-bottom', 'autofocus', 'disabled', 'text-align', 'padding-right', 'padding', 'padding-top', 'padding-bottom',
-            'max-width', 'min-width', 'min-height', 'max-height', 'margin-inline-start', 'margin-inline-end',
+            'target', 'usemap', 'width', ' height', 'shape', 'coords', 'controls', 'autoplay', 'loop', 'muted', 'preload', 'dir', 'cite',
+            //'margin','margin-left', 'margin-inline-start', 'margin-inline-end',
+           'margin-top', 'margin-bottom', 'autofocus', 'disabled', 'text-align', 'padding-right', 'padding', 'padding-top', 'padding-bottom',
+            'max-width', 'min-width', 'min-height', 'max-height', 
             'font-style', 'font-weight', 'font-variant', 'font-size', 'rel', 'text-shadow', 'open', 'charset', 'content', 'initial-scale',
             'min', 'max','data','placeholder','cy','stroke','fill','stroke-width','rows','cols','datetime','kind','srclang'
         ];
