@@ -26,27 +26,31 @@ export class ColorearHtml {
         codigoHtml.style.color = this._letras;
         const contenido = codigoHtml.innerHTML;
         const etiquetas = ["header", "main", "footer", "section", "h1", "H1", "h2", "H2", "h3", "H3", "h4", "H4", "h5", "H5", "h6", "H6",
-            "button", "ul", "li", "nav", "pre", "hr", "ol", "blockquote",'strong','i','p',
-             'span', 'canvas', 'iframe','br','!DOCTYPE html', 'html','base','bdi','bdo',
-           'table', 'tr', 'td', 'thead','colgroup','col','th','caption','head','title','body','dfn','abbr','address','script',
-            'video', 'a', 'form','label','input','map','area','audio','source','cite','var','samp','kbd','data','datalist',
-            'option','dl','dt','dd','del','ins','details','summary','dfn','dialog','em','embed','legend','fieldset',
-            'figure','figcaption',
+            "button", "ul", "li", "nav", "pre", "hr", "ol", "blockquote", 'strong', 'i', 'p',
+            'span', 'canvas', 'iframe', 'br', '!DOCTYPE html', 'html', 'base', 'bdi', 'bdo',
+            'table', 'tr', 'td', 'thead', 'colgroup', 'col', 'th', 'caption', 'head', 'title', 'body', 'dfn', 'abbr', 'address', 'script',
+            'video', 'a', 'form', 'label', 'input', 'map', 'area', 'audio', 'source', 'cite', 'var', 'samp', 'kbd', 'data', 'datalist',
+            'option', 'dl', 'dt', 'dd', 'del', 'ins', 'details', 'summary', 'dfn', 'dialog', 'em', 'embed', 'legend', 'fieldset',
+            'figure', 'figcaption', 'hgroup', 'mark', 'menu', 'meta', 'meter','noscript','object','optgroup','output','param',
+            'picture','progress','ruby','rp','rt','s','samp','search','select','small','strong','sub','details','sup','svg',
+            'circle','tbody','template','textarea','tfoot','time','track','u','wbr',
 
-        'srcset', 'alt', 'class', 'id', 'src', 'frameborder', 'action', 'method','name','for','type','value','href','target',
-    'usemap','width',' height','shape','coords','controls','autoplay','loop','muted','preload','dir','cite','margin',
-    'margin-left','padding-right','margin-top','margin-bottom','max-width','min-height','max-height','min-width',
-    'autofocus','disabled','text-align','padding','padding-top','padding-bottom','margin-inline-start','margin-inline-end',
-    'font-style','font-weight','font-variant','font-size','rel','text-shadow','open'
-    ];
+            'srcset', 'alt', 'class', 'id', 'src', 'frameborder', 'action', 'method', 'name', 'for', 'type', 'value', 'href', 'target',
+            'usemap', 'width', ' height', 'shape', 'coords', 'controls', 'autoplay', 'loop', 'muted', 'preload', 'dir', 'cite', 'margin',
+            'margin-left', 'padding-right', 'margin-top', 'margin-bottom', 'max-width', 'min-height', 'max-height', 'min-width',
+            'autofocus', 'disabled', 'text-align', 'padding', 'padding-top', 'padding-bottom', 'margin-inline-start', 'margin-inline-end',
+            'font-style', 'font-weight', 'font-variant', 'font-size', 'rel', 'text-shadow', 'open', 'charset', 'content', 'initial-scale', 'min',
+            'max','data','placeholder','cy','stroke','fill','stroke-width','rows','cols','datetime','kind','srclang'
+        ];
 
 
 
-        const atributos = ['srcset', 'alt', 'class', 'id', 'src', 'frameborder','action', 'method','name','for','type','value','href',
-            'target','usemap','width',' height','shape','coords','controls','autoplay','loop','muted','preload','dir','cite','margin',
-            'margin-left','margin-top','margin-bottom','autofocus','disabled','text-align','padding-right','padding','padding-top','padding-bottom',
-            'max-width','min-width','min-height','max-height','margin-inline-start','margin-inline-end',
-            'font-style','font-weight','font-variant','font-size','rel','text-shadow','open'
+        const atributos = ['srcset', 'alt', 'class', 'id', 'src', 'frameborder', 'action', 'method', 'name', 'for', 'type', 'value', 'href',
+            'target', 'usemap', 'width', ' height', 'shape', 'coords', 'controls', 'autoplay', 'loop', 'muted', 'preload', 'dir', 'cite', 'margin',
+            'margin-left', 'margin-top', 'margin-bottom', 'autofocus', 'disabled', 'text-align', 'padding-right', 'padding', 'padding-top', 'padding-bottom',
+            'max-width', 'min-width', 'min-height', 'max-height', 'margin-inline-start', 'margin-inline-end',
+            'font-style', 'font-weight', 'font-variant', 'font-size', 'rel', 'text-shadow', 'open', 'charset', 'content', 'initial-scale',
+            'min', 'max','data','placeholder','cy','stroke','fill','stroke-width','rows','cols','datetime','kind','srclang'
         ];
 
         let contenidoModificado = contenido
@@ -159,18 +163,18 @@ export class ColorearHtml {
     }
 
     static colores = {
-        azul: (alfa = 1) => {return `rgb(0, 0, 255,${alfa})`},
-        negro: (alfa = 1) => {return `rgb(0, 0, 0,${alfa})`},
-        rojo: (alfa = 1) => {return `rgb(255, 0, 0,${alfa})`},
-        amarillo: (alfa = 1) => {return `rgb(255, 255, 0,${alfa})`},
-        blanco: (alfa = 1) => {return `rgb(255, 255, 255,${alfa})`},
-        verde: (alfa = 1) => {return `rgb(0, 128, 0,${alfa})`},
-        marron: (alfa = 1) => {return `rgb( 165, 42, 42,${alfa})`},
-        violeta: (alfa = 1) => {return `rgb(138, 43, 226,${alfa})`},
-        beige: (alfa = 1) => {return `rgb(245, 245, 220,${alfa})`},
-        naranja: (alfa = 1) => {return `rgb(255, 165, 0,${alfa})`},
-        rosa: (alfa = 1) => {return `rgb(255, 192, 203,${alfa})`}
+        azul: (alfa = 1) => { return `rgb(0, 0, 255,${alfa})` },
+        negro: (alfa = 1) => { return `rgb(0, 0, 0,${alfa})` },
+        rojo: (alfa = 1) => { return `rgb(255, 0, 0,${alfa})` },
+        amarillo: (alfa = 1) => { return `rgb(255, 255, 0,${alfa})` },
+        blanco: (alfa = 1) => { return `rgb(255, 255, 255,${alfa})` },
+        verde: (alfa = 1) => { return `rgb(0, 128, 0,${alfa})` },
+        marron: (alfa = 1) => { return `rgb( 165, 42, 42,${alfa})` },
+        violeta: (alfa = 1) => { return `rgb(138, 43, 226,${alfa})` },
+        beige: (alfa = 1) => { return `rgb(245, 245, 220,${alfa})` },
+        naranja: (alfa = 1) => { return `rgb(255, 165, 0,${alfa})` },
+        rosa: (alfa = 1) => { return `rgb(255, 192, 203,${alfa})` }
 
-       
+
     }
 }
