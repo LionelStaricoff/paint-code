@@ -27,31 +27,30 @@ export class ColorearHtml {
         const contenido = codigoHtml.innerHTML;
         const etiquetas = ["header", "main", "footer", "section", "h1", "H1", "h2", "H2", "h3", "H3", "h4", "H4", "h5", "H5", "h6", "H6",
             "button", "ul", "li", "nav", "pre", "hr", "ol", "blockquote", 'strong', 'i', 'p',
-            'span', 'canvas', 'iframe', 'br', '!DOCTYPE html', 'html', 'base', 'bdi', 'bdo',
+            'canvas', 'iframe', '!DOCTYPE html', 'html', 'base', 'bdi', 'bdo','div',
             'table', 'tr', 'td', 'thead', 'colgroup', 'col', 'th', 'caption', 'head', 'title', 'body', 'dfn', 'abbr', 'address', 'script',
             'video', 'a', 'form', 'label', 'input', 'map', 'area', 'audio', 'source', 'cite', 'var', 'samp', 'kbd', 'data', 'datalist',
             'option', 'dl', 'dt', 'dd', 'del', 'ins', 'details', 'summary', 'dfn', 'dialog', 'em', 'embed', 'legend', 'fieldset',
-            'figure', 'figcaption', 'hgroup', 'mark', 'menu', 'meta', 'meter','noscript','object','optgroup','output','param',
-            'picture','progress','ruby','rp','rt','s','samp','search','select','small','strong','sub','details','sup','svg',
-            'circle','tbody','template','textarea','tfoot','time','track','u','wbr',
+            'figure', 'figcaption', 'hgroup', 'mark', 'menu', 'meta', 'meter', 'noscript', 'object', 'optgroup', 'output', 'param',
+            'picture', 'progress', 'ruby', 'rp', 'rt', 's', 'samp', 'search', 'select', 'small', 'strong', 'sub', 'details', 'sup', 'svg',
+            'circle', 'tbody', 'template', 'textarea', 'tfoot', 'time', 'track', 'u', 'wbr',
 
             'srcset', 'alt', 'class', 'id', 'src', 'frameborder', 'action', 'method', 'name', 'for', 'type', 'value', 'href', 'target',
-            'usemap', 'width', ' height', 'shape', 'coords', 'controls', 'autoplay', 'loop', 'muted', 'preload', 'dir', 'cite', 'margin',
-            'margin-left', 'padding-right', 'margin-top', 'margin-bottom', 'max-width', 'min-height', 'max-height', 'min-width',
-            'autofocus', 'disabled', 'text-align', 'padding', 'padding-top', 'padding-bottom', 'margin-inline-start', 'margin-inline-end',
+            'usemap', 'width', ' height', 'shape', 'coords', 'controls', 'autoplay', 'loop', 'muted', 'preload', 'dir', 'cite',
+            'max-width', 'min-height', 'max-height', 'min-width',
+            'autofocus', 'disabled', 'text-align', 'padding', 'padding-top', 'padding-bottom',
             'font-style', 'font-weight', 'font-variant', 'font-size', 'rel', 'text-shadow', 'open', 'charset', 'content', 'initial-scale', 'min',
-            'max','data','placeholder','cy','stroke','fill','stroke-width','rows','cols','datetime','kind','srclang'
+            'max', 'data', 'placeholder', 'cy', 'stroke', 'fill', 'stroke-width', 'rows', 'cols', 'datetime', 'kind', 'srclang'
         ];
 
 
 
         const atributos = ['srcset', 'alt', 'class', 'id', 'src', 'frameborder', 'action', 'method', 'name', 'for', 'type', 'value', 'href',
             'target', 'usemap', 'width', ' height', 'shape', 'coords', 'controls', 'autoplay', 'loop', 'muted', 'preload', 'dir', 'cite',
-            //'margin','margin-left', 'margin-inline-start', 'margin-inline-end',
-           'margin-top', 'margin-bottom', 'autofocus', 'disabled', 'text-align', 'padding-right', 'padding', 'padding-top', 'padding-bottom',
-            'max-width', 'min-width', 'min-height', 'max-height', 
+            'autofocus', 'disabled', 'text-align', 'padding-right', 'padding', 'padding-top', 'padding-bottom',
+            'max-width', 'min-width', 'min-height', 'max-height',
             'font-style', 'font-weight', 'font-variant', 'font-size', 'rel', 'text-shadow', 'open', 'charset', 'content', 'initial-scale',
-            'min', 'max','data','placeholder','cy','stroke','fill','stroke-width','rows','cols','datetime','kind','srclang'
+            'min', 'max', 'data', 'placeholder', 'cy', 'stroke', 'fill', 'stroke-width', 'rows', 'cols', 'datetime', 'kind', 'srclang'
         ];
 
         let contenidoModificado = contenido
