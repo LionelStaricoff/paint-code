@@ -7,8 +7,9 @@ export class ColorearHtml {
         this._letras = (letras) ? letras : 'gainsboro';
         this.builder;
 
-        this.reemplazar();
+       
         this.espaciar();
+        this.reemplazar();
     }
 
     reemplazar() {
@@ -96,41 +97,39 @@ export class ColorearHtml {
             }
         }
     }
-    colocarPaddingInterno(hijos, padding = 20,) {
-
-        const span = document.createElement('span')
-        span.style.display = 'block'
-        span.style.marginLeft = `${padding}px`;
-        span.style.marginTop = '-20px';
+    colocarPaddingInterno(hijos, padding = 10,) {
+        const span = this.crearSpan(padding);
+        let padre = null;
         for (const ch of hijos) {
-            const padre = ch.parentNode;
+         
 
+            if(padre == null) padre = ch.parentNode;
+           //debugger;
+console.log('padre: '+padre.innerHTML)
 
             span.appendChild(ch);
-            padre.appendChild(span)
+           
 
 
             if (ch.children.length > 0) {
 
-                const hijos2 = ch.children;
+                const hijos2 =  Array.from(ch.children);
 
-                this.colocarPaddingInterno2(hijos2, 40);
+                this.colocarPaddingInterno(hijos2, padding+10);
             }
+
+            padre.appendChild(span)
         }
+      
     }
-    colocarPaddingInterno2(hijos, padding) {
-        const div = document.createElement('div')
-        div.style.marginLeft = `${padding}px`;
-        div.style.marginTop = '-20px';
-        let padre;
-        const hijos1 = Array.from(hijos);
+  
 
-        for (const ch of hijos1) {
-            padre = ch.parentNode;
-            div.appendChild(ch);
-
-        }
-        padre.appendChild(div);
+     crearSpan(padding) {
+        const span = document.createElement('span');
+        span.style.display = 'block';
+        span.style.marginLeft = `${padding}px`;
+        span.style.marginTop = '-20px';
+        return span;
     }
 
     static Builder() {
@@ -178,3 +177,5 @@ export class ColorearHtml {
 
     }
 }
+
+
