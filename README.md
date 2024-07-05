@@ -6,7 +6,7 @@
 
 <h4>Colorea tu código para que se vea <b>elegante</b></h4>
 
-<img src='./html_coloreado.jpeg'>
+<img src='https://raw.githubusercontent.com/LionelStaricoff/paint-code/main/html_coloreado.jpeg'>
 
 #
 
@@ -23,7 +23,7 @@ Solo debes colocar el script en tu html y agregar la clase colorear al padre:
 </pre>
 
 #
-<img src='./html.jpeg'>
+<img src='https://raw.githubusercontent.com/LionelStaricoff/paint-code/main/html.jpeg'>
 
 
 ## Utiliza el constructor 
@@ -39,7 +39,7 @@ Solo debes colocar el script en tu html y agregar la clase colorear al padre:
 </code>
 </pre>
 
-<img src='./img2.jpeg'>
+<img src='https://raw.githubusercontent.com/LionelStaricoff/paint-code/main/img2.jpeg'>
 
 #
 
