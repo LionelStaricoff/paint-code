@@ -104,8 +104,7 @@ export class ColorearHtml {
          
 
             if(padre == null) padre = ch.parentNode;
-           //debugger;
-console.log('padre: '+padre.innerHTML)
+
 
             span.appendChild(ch);
            
