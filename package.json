@@ -1,0 +1,51 @@
+{
+  "name": "paintcode",
+  "version": "2.1.0",
+  "description": "libreria para colorear codigo html",
+  "main": "Paint.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LionelStaricoff/paint-code.git#main"
+  },
+  "keywords": [
+    "paintcode",
+    "libreria",
+    "pintar",
+    "bookshop",
+    "paint",
+    "code",
+    "paint-code",
+    "paint-code-html",
+    "html",
+    "pintar-codigo-html",
+     "pintar-codigo",
+     "code-paint", 
+     "html-painter", 
+     "pintar-codigo", 
+     "color-html", 
+     "html-colorizer",
+      "code-coloring-tool", 
+      "pintura-html", 
+      "html-coding-art",
+       "code-artisan", 
+       "libro-html-paint", 
+       "colorizar-codigo",
+        "arte-html", 
+        "pintura-codigo", 
+        "code-art-painting", 
+        "html-paint-tool",
+         "color-codigo-html", 
+         "code-highlight", 
+         "pintura-visual-html",
+          "colorizador-de-codigo"
+  ],
+  "author": "staricofflionel@gmail.com (https://www.linkedin.com/in/lionel-staricoff/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LionelStaricoff/paint-code/issues"
+  },
+  "homepage": "https://github.com/LionelStaricoff/paint-code/tree/main#readme"
+}
