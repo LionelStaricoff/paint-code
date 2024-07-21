@@ -1,6 +1,6 @@
 {
   "name": "paintcode",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "type": "module",
 
   "description": "libreria para colorear codigo html",
