@@ -1,4 +1,4 @@
-import {ColorearHtml} from './Paint.js';
+import {ColorearHtml} from './node_modules/paintcode/Paint.js';
 
 //new ColorearHtml('red',null,'rgb(0, 0, 0)','yellow');
 

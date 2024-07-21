@@ -1,12 +1,32 @@
 <div align=center>
 
-# paint-code
+# paintcode
 
 ### version 2.1.0
 
 <h4>Colorea tu código para que se vea <b>elegante</b></h4>
 
 <img src='https://raw.githubusercontent.com/LionelStaricoff/paint-code/main/html_coloreado.jpeg'>
+
+#
+
+## Desde npm:
+
+<pre>
+<code>
+npm i codepaint
+</code>
+</pre>
+
+### Enlazar el archivo desde node_modules y ejecuta el constructor:
+
+<pre>
+<code>
+import {ColorearHtml} from './node_modules/paintcode/Paint.js'
+
+new ColorearHtml();
+</code>
+</pre>
 
 #
 
