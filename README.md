@@ -2,7 +2,7 @@
 
 # paintcode
 
-### version 2.1.0
+### version 2.1.2
 
 <h4>Colorea tu código para que se vea <b>elegante</b></h4>
 
