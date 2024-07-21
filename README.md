@@ -2,7 +2,7 @@
 
 # paintcode
 
-### version 2.1.2
+### version 2.1.3
 
 <h4>Colorea tu código para que se vea <b>elegante</b></h4>
 
@@ -22,7 +22,7 @@ npm i codepaint
 
 <pre>
 <code>
-import {ColorearHtml} from './node_modules/paintcode/Paint.js'
+import ColorearHtml from './node_modules/paintcode/Paint.js'
 
 new ColorearHtml();
 </code>
@@ -36,7 +36,7 @@ Solo debes colocar el script en tu html y agregar la clase colorear al padre:
 <pre>
 <code>
    &lt;script type="module" &gt;  
-       import{ColorearHtml} from 'https://lionelstaricoff.github.io/paint-code/Paint.js';
+       import ColorearHtml from 'https://lionelstaricoff.github.io/paint-code/Paint.js';
        new ColorearHtml();
       &lt;script&gt;
 </code>
@@ -53,7 +53,7 @@ Solo debes colocar el script en tu html y agregar la clase colorear al padre:
 <pre>
 <code>
    &lt;script type="module" &gt;  
-       import{ColorearHtml} from 'https://lionelstaricoff.github.io/paint-code/Paint.js';
+       import ColorearHtml from 'https://lionelstaricoff.github.io/paint-code/Paint.js';
       new ColorearHtml('red','blue','black','yellow');
       &lt;script&gt;
 </code>
@@ -70,7 +70,7 @@ Solo debes colocar el script en tu html y agregar la clase colorear al padre:
 <pre>
 <code>
    &lt;script type="module" &gt;  
-       import{ColorearHtml} from 'https://lionelstaricoff.github.io/paint-code/Paint.js';
+       import ColorearHtml from 'https://lionelstaricoff.github.io/paint-code/Paint.js';
 
      ColorearHtml.Builder()
                            .etiquetas('rgb(26, 76, 76)')
@@ -89,7 +89,7 @@ Solo debes colocar el script en tu html y agregar la clase colorear al padre:
 <pre>
 <code>
    &lt;script type="module" &gt;  
-       import{ColorearHtml} from 'https://lionelstaricoff.github.io/paint-code/Paint.js';
+       import ColorearHtml from 'https://lionelstaricoff.github.io/paint-code/Paint.js';
 
      ColorearHtml.Builder()
               .etiquetas(ColorearHtml.colores.naranja('90%'))
