@@ -101,6 +101,34 @@ Solo debes colocar el script en tu html y agregar la clase colorear al padre:
 </code>
 </pre>
 
+#
+
+### Importando de forma dinámica y guardarla en una variable global:
+
+<pre>
+<code>
+   &lt;script type="module" &gt;  
+       
+        import('https://lionelstaricoff.github.io/paint-code/Paint.js')
+                .then(module => module.default)
+
+                .then(data => {
+
+                 globalThis.color =  class colorearModule extends  data{};
+                    
+                 globalThis.color.Builder()
+                    .etiquetas('blue')
+                    .background('red')
+                    .atributos('green')
+                    .letras('black')
+                    .build();
+                })
+                .catch(error => console.error(error));
+
+      &lt;script&gt;
+</code>
+</pre>
+
 &copy; Todos los derechos recervados por mi <a target=_blank href="https://www.linkedin.com/in/lionel-staricoff/"> Staricoff Lionel</a>
 
 

@@ -7,17 +7,17 @@ export default class ColorearHtml {
         this._letras = (letras) ? letras : 'gainsboro';
         this.builder;
 
-       
         this.espaciar();
         this.reemplazar();
+    
     }
 
     reemplazar() {
-        document.addEventListener('DOMContentLoaded', () => {
+      
             const codigoHtml = document.querySelectorAll('.colorear');
             codigoHtml.forEach(c => this.colorar(c));
 
-        });
+        
     }
 
 
@@ -132,7 +132,7 @@ export default class ColorearHtml {
     }
 
     static Builder() {
-        this.Builder = new ColorearHtml();
+        this.Builder = new this();
         return this;
     }
 
@@ -176,5 +176,4 @@ export default class ColorearHtml {
 
     }
 }
-
 
