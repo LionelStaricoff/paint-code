@@ -2,7 +2,7 @@
 
 # paintcode
 
-### version 2.1.4
+### version 2.2.0
 
 <h4>Colorea tu código para que se vea <b>elegante</b></h4>
 
@@ -128,6 +128,39 @@ Solo debes colocar el script en tu html y agregar la clase colorear al padre:
       &lt;script&gt;
 </code>
 </pre>
+
+## Agregando clase ColorearHtmlInnerText() para colorear html colocado como InnerText dentro de un elemento del DOM
+
+<pre>
+<code>
+
+&lt;div class="innertext coloreartext"&gt;
+
+
+   &lt;script type="module" &gt;  
+
+
+   const p = document.querySelector('.innertext')
+p.innerText = `
+           &lt;div id="doble_button"&gt; 
+           &lt;span&gt; X &lt;/span&gt; 
+           &lt;input type="button" value="Guardar_bbdd"&gt; 
+           &lt;input type="button" value="cargar_bbdd"&gt; 
+           &lt;/div&gt; 
+
+`;
+       
+        
+        import('https://lionelstaricoff.github.io/paint-code/Paint.js')
+                .then(module => new module.ColorearHtmlInnerText( 'green','red','#333','white') )
+
+         
+           
+
+      &lt;script&gt;
+</code>
+</pre>
+
 
 &copy; Todos los derechos recervados por mi <a target=_blank href="https://www.linkedin.com/in/lionel-staricoff/"> Staricoff Lionel</a>
 
